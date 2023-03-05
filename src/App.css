@@ -1,0 +1,121 @@
+* {
+    font-family: 'Helvetica';
+    margin: 0;
+}
+
+/*Navbar Section*/
+
+.navWrap {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.social li {
+    list-style: none;
+    transition: 0.5s;
+}
+
+.social li:hover {
+    cursor: pointer;
+    transform: translateY(-10%);
+    transform: scale(1.8);
+}
+
+/*Hero Section*/
+
+.heroWrap {
+    background: rgb(59, 121, 181);
+    background: linear-gradient(0deg, rgba(59, 121, 181, 1) 0%, rgba(5, 5, 11, 1) 100%);
+    height: 100%;
+    padding-top: 3rem;
+}
+
+.cardBody {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3rem;
+    border-radius: 1rem;
+    max-width: 700px;
+}
+
+
+.tags {
+    list-style: none;
+    font-size: 10px;
+    font-weight: lighter;
+    color: gray;
+    opacity: 90%;
+    ;
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin: 3rem;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: center;
+}
+
+.cardFooter button {
+    border-radius: 3rem;
+    border-style: none;
+    width: 7rem;
+    height: 3rem;
+    background: rgb(245, 170, 169);
+    background: linear-gradient(90deg, rgba(245, 170, 169, 1) 0%, rgba(253, 29, 29, 1) 100%);
+    color: white;
+    transition: .5s;
+}
+
+.cardFooter button:hover {
+    cursor: pointer;
+    transform: translateY(-10%);
+    background: rgb(59, 121, 181);
+    background: linear-gradient(90deg, rgba(59, 121, 181, 1) 0%, rgba(11, 5, 7, 1) 100%);
+    font-size: 15px;
+}
+
+.rIcon {
+    display: flex;
+    gap: .2rem;
+}
+
+.rIcon span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .heroWrap {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
